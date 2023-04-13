@@ -1,20 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>GUL - Evento</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== SEO ====== -->
+    <meta name="description" content="Información sobre el evento actual del GUL.">
+    <meta property="og:title" content="GUL - Evento" />
+    <meta property="og:url" content="https://gul.uc3m.es/evento" /> <!-- TODO me la he inventado la vdd xd -->
+    <meta property="og:image" content="static/images/logo_horizontal_gray.svg" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Información sobre el evento actual del GUL." />
+    <meta property="og:locale" content="es_ES" />
+    <!-- ====== FAVICON ====== -->
+    <link rel="icon" href="static/images/favicon.png" />
+    <link rel="stylesheet" href="static/style/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="static/style/styles.css" />
+    <link rel="stylesheet" href="static/style/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <!-- ====== FONTS ====== -->
+    <link rel="stylesheet" href="static/style/fonts/gfonts.css"/>
+    <script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="static/style/bootstrap/js/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="static/js/script.js" defer></script>
 </head>
 <body>
-    <article class="wraper">
-        <div class="image">   
-            <img id="ima" src="https://cloud.gul.es/s/XrkytFasMz8JEZk/download" alt="">
+<!-- ====== NAV SECTION ====== -->
+<header id="nav-section">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid m-3 mt-0 mb-0">
+            <a class="navbar-brand" href="#animation-header" aria-current="page">
+                <img class="logo-nav" src="static/images/logo_horizontal_gray.svg" alt="Logo GUL"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav nav-container-icon">
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://cursos-gul.uc3m.es" title="Enlace a cursos-gul.uc3m.es">
+                            <img class="image-nav" src="static/images/icon/graduation-cap.svg" alt="Graduation icon"/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://gul.uc3m.es/ftp" title="Enlace a gul.uc3m.es/ftp" aria-disabled="true">
+                            <img class="image-nav" src="static/images/icon/nextcloud.svg" alt="Nextcloud icon"/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://gul.uc3m.es/zoe" title="Enlace a gul.uc3m.es/zoe" aria-disabled="true">
+                            <img class="image-nav" src="static/images/icon/zoe_icon.svg" alt="ZoE icon"/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://gul.uc3m.es/radio" title="Enlace a gul.uc3m.es/radio" aria-disabled="true">
+                            <img class="image-nav" src="static/images/icon/radio.svg" alt="Radio icon"/>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://gul.uc3m.es" title="Enlace a gul.uc3m.es" aria-disabled="true">
+                            <img class="image-nav" src="static/images/icon/gul-lince.png" alt="GUL icon"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="text">
-           text
-            
+    </nav>
+</header>
+<!-- ====== MAIN SECTION ====== -->
+<main>
+    <!-- Bloque cartel -->
+    <section id="evento">
+        <div id="contenido">
+            <div class="cartel">
+                <img src="https://cloud-gul.uc3m.es/apps/files_sharing/publicpreview/akcbfyMdAMmT3Gf?file=/eventos/cartel.png&x=1920&y=1080&a=true" alt="Cartel del evento actual'"/>
+            </div>
+            <div id="datos">
+                <div id="titulo"></div>
+                <div id="ponentes"></div>
+                <div id="fecha"></div>
+                <div id="inicio"></div>
+                <div id="fin"></div>
+                <div id="lugar"></div>
+                <div id="link"></div>
+                <div id="programa"></div>
+            </div>
         </div>
-    </article>
-    
+    </section>
 
 
+    <!-- ==== Parte legal ==== -->
+    <footer id="legal-section" class="border-top border-dark">
+        <div class="text-desc text-center">
+            <p>
+                <!-- iconos -->
+                <a target="_blank" aria-current="false" href="https://twitter.com/guluc3m" title="Enlace a Twitter">
+                    <img class="image-nav" src="static/images/icon/twitter.svg" alt="Twitter icon"/></a> <!-- Está en la misma línea porque si no el HTML mete un espacio en blanco -->
+                <a target="_blank" href="https://github.com/guluc3m" title="Enlace a Github" aria-current="false">
+                    <img class="image-nav" src="static/images/icon/github.svg" alt="Github icon"/></a>
+                <a target="_blank" href="https://youtube.com/c/guluc3m" title="Enlace a YouTube" aria-current="false">
+                    <img class="image-nav" src="static/images/icon/youtube.svg" alt="YouTube icon"/></a>
+            </p>
+            <p>
+                El Grupo de Usuarios de Linux de la Universidad Carlos III de Madrid es una asociación
+                declarada de beneficio social por el Ministerio de Hacienda.
+            </p>
+            <p>
+                Domicilio social: Despacho 2.3.C05 del edificio Sabatini. Avenida de la Universidad, 30, 28911 Leganés, Madrid, España.
+            </p>
+            <p>
+                C.I.F.: G83296988<br>
+                Número de registro de la comunidad de Madrid: 23500<br>
+                Número de registro del ayuntamiento de Leganés: 795
+            </p>
+            <a href="https://cloud-gul.uc3m.es/s/s5TRM78die8rdAc" target="_blank" title="link a los estatutos" class="no-style">Estatutos</a> | <a href="https://cloud-gul.uc3m.es/s/f8ALGXstCpJa5Lc" target="_blank" title="link al código de conducta" class="no-style">Código de Conducta</a>
+        </div>
+    </footer>
+</main>
 </body>
+</html>

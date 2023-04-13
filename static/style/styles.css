@@ -1,0 +1,308 @@
+@font-face {
+  font-family: Lato;
+  src: url(./fonts/Lato.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+}
+
+.no-style {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* ======  NAV SECTION START ====== */
+#navbar {
+  background-color: rgb(255,255,255) !important;
+  box-shadow: 0px 2px 10px black;
+  min-height: 10vh;
+}
+.logo-nav {
+  width: 7.5rem;
+}
+.image-nav {
+  width: 2rem;
+}
+.nav-container-icon > .nav-item {
+  margin-right: 20px;
+  transition: ease 0.5s;
+  border-radius: 40px;
+  align-items: center;
+}
+.nav-container-icon > .nav-item:hover {
+  background-color: #d7d8d8;
+}
+.nav-container-text > .nav-item {
+  transition: ease 0.5s;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.nav-link {
+  color: black !important;
+}
+.nav-container-text > .nav-item:hover {
+  background-color: #d7d8d8;
+  transform: scale(1.1);
+}
+/* <<<<<<  NAV SECTION END >>>>>> */
+
+/* ======  MAIN SECTION START ====== */
+#evento {
+    background-image: url("../images/background1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#contenido {
+    padding-top: 20vh !important;
+    padding-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartel {
+    width: 40vh;
+    height: 50vh;
+}
+
+.cartel img {
+    width: auto;
+    height: 100%;
+}
+
+#datos {
+    padding: 1vh;
+    background-color: #ffffff;
+}
+
+.separador {
+  top: -2.5vh;
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+}
+
+#separador1 {
+  background-image: url("../images/separador-alt.png");
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+#separador2 {
+  background-image: url("../images/separador-alt.png"); /* cambiada por la imagen del separador 1 tb, sin los colaboradores no se veía bien */
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+#que-es {
+  /*height: 60vh; /* La mitad de la pantalla */
+  background-image: url("../images/background1.jpg");
+  background-position: center;
+  padding: 5% 0;
+}
+
+#que-es>.row, #charlas>.row  {
+  height: 100%;
+}
+
+#pingu img {
+  width: 100%;
+}
+
+#participantes {
+    padding: 5% 0;
+}
+
+#participantes .participante img {
+    border: 0.75rem solid black;
+    border-radius: 50%;
+    background-color: black;
+
+    border-bottom-color: #d8dbe2;
+    border-right-color: #d8dbe2;
+
+    border-left-color: #39a5db;
+    border-top-color: #39a5db;
+}
+
+#charlas {
+    background-image: url("../images/background2.png");
+    background-size: cover;
+    background-position: top;
+    padding: 5% 0;
+}
+
+#charlas .tab-content > .active {
+    display: flex !important;
+}
+
+#charlas .talk-desc {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#charlas .talk-desc > div {
+    min-height: 30vh;
+}
+
+
+#charlas .talk-list {
+    /*min-height: 40vh;*/
+    align-items: center;
+    display: flex;
+}
+
+#dias-charlas li .nav-link.active {
+    background-color: #591728;
+    color: white !important;
+}
+
+.charla > div {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(../images/charla-background.png) 20 fill;
+}
+
+.nav-charlas li .nav-link.active {
+    background-color: transparent !important;
+}
+
+.nav-charlas li .nav-link.active {
+    border: 10px solid transparent;
+    /*padding: 15px;*/
+    border-image: url(../images/charla-background-active.png) 10 fill;
+}
+
+.nav-charlas li .nav-link {
+    border: 10px solid transparent;
+    /*padding: 15px;*/
+    border-image: url(../images/charla-background-unactive.png) 10 fill;
+}
+
+#kenney {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+}
+
+.aula::before, .nav-aula::before {
+    content: "Aula: ";
+    font-weight: bold;
+}
+
+.nav-aula {
+    margin-right: 12px;
+}
+
+/* ====== TALK TYPE CLASSES ====== */
+.talk-charla, .talk-taller {
+    display: inline-block;
+    border: 10px solid transparent;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 85%;
+    margin-left: 10px;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.talk-charla {
+    background-color: lightskyblue;
+}
+
+.talk-taller {
+    background-color: #ffbd42;
+}
+
+.talk-icon {
+    padding-right: 8px;
+}
+
+/* ====== SMALL TALK TYPE CLASSES (FOR THE NAVBAR) ====== */
+.talk-small {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.talk-small-icon {
+    padding-right: 0;
+}
+
+.nav-titulo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+
+/* <<<<<<  MAIN SECTION SECTION END >>>>>> */
+.btn-primary {
+  background-color: rgb(0, 117, 176);
+}
+
+.text-title {
+  background-color: rgb(0, 117, 176);
+  color: #ffffff;
+}
+
+.text-desc {
+  text-align: justify;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* ======  MEDIA QUERY SECTION START ====== */
+
+@media screen and (max-width:1400px){
+}
+
+@media screen and (max-width: 992px) {
+  .nav-container-icon {
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  .nav-container-text {
+    border-top: 1px solid #d7d8d8;
+  }
+  .nav-container-text > .nav-item {
+    text-align: center;
+  }
+  .nav-container-icon > .nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+    #que-es, #charlas {
+        padding: 10% 0;
+    }
+
+    .charla {
+      margin-top: 5%;
+    }
+
+    #charlas .dia.active {
+        flex-flow: column-reverse;
+    }
+}
+
+/* <<<<<<  MEDIA QUERY SECTION END >>>>>> */
