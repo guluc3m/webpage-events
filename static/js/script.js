@@ -2,8 +2,15 @@
 $.get("http://api.allorigins.win/get?url=https%3A//cloud-gul.uc3m.es/s/akcbfyMdAMmT3Gf/download%3Fpath%3D%252Feventos%26files%3Devent_data.json", function (data) {
     let parsed = JSON.parse(data.contents);
     $.each(parsed, function(key, val) {
-        $("#" + key).append(val.toString());
+        $("#" + key).text(val.toString());
     });
+    $("#separador-horas").text(" - "); // añadimos el separador después para que no se vea el guión suelto mientras carga
+
+    if("link" in parsed) {
+        $("#link").html("<a href=\"" + parsed["link"] + "\" target=\"_blank\">Enlace del evento</a>")
+    } else {
+        $("#info-link-container").remove();
+    }
 });
 
 // This downloads and inserts the event program

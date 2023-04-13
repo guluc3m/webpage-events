@@ -75,15 +75,39 @@
             <div class="cartel">
                 <img src="https://cloud-gul.uc3m.es/apps/files_sharing/publicpreview/akcbfyMdAMmT3Gf?file=/eventos/cartel.png&x=1920&y=1080&a=true" alt="Cartel del evento actual'"/>
             </div>
-            <div id="datos">
-                <div id="titulo"></div>
-                <div id="ponentes"></div>
-                <div id="fecha"></div>
-                <div id="inicio"></div>
-                <div id="fin"></div>
-                <div id="lugar"></div>
-                <div id="link"></div>
-                <div id="programa"></div>
+            <div id="datos-1">
+                <div class="info-evento">
+                    <p class="titulo-evento">Título:</p>
+                    <div class="contenido-evento" id="titulo">Cargando...</div>
+                </div>
+                <div class="info-evento">
+                    <p class="titulo-evento">Ponentes:</p>
+                    <div class="contenido-evento" id="ponentes">Cargando...</div>
+                </div>
+                <div class="info-evento">
+                    <p class="titulo-evento">Programa:</p>
+                    <div class="contenido-evento" id="programa">Cargando...</div>
+                </div>
+            </div>
+            <div id="datos-2">
+                <div class="info-evento">
+                    <p class="titulo-evento">Fecha y hora:</p>
+                    <div class="contenido-evento">
+                        <span id="fecha">Cargando...</span>
+                        <br>
+                        <span id="inicio"></span><span id="separador-horas"></span><span id="fin"></span>
+                    </div>
+                </div>
+                <div class="info-evento">
+                    <p class="titulo-evento">Lugar:</p>
+                    <div class="contenido-evento" id="lugar">Cargando...</div>
+                </div>
+                <div id="info-link-container">
+                    <div class="info-link">
+                        <i class="fa fa-lg fa-video-camera info-link-icon"></i>
+                        <span id="link">Enlace del evento</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
