@@ -1,6 +1,6 @@
 // This downloads and parses the events json
-$.get("http://api.allorigins.win/get?url=https%3A//cloud-gul.uc3m.es/s/akcbfyMdAMmT3Gf/download%3Fpath%3D%252Feventos%26files%3Devent_data.json", function (data) {
-    let parsed = JSON.parse(data.contents);
+$.get("https://cloud-gul.uc3m.es/s/akcbfyMdAMmT3Gf/download?path=%2Feventos&files=event_data.json", function (data) {
+    let parsed = JSON.parse(data);
     $.each(parsed, function(key, val) {
         $("#" + key).text(val.toString());
     });
@@ -14,8 +14,8 @@ $.get("http://api.allorigins.win/get?url=https%3A//cloud-gul.uc3m.es/s/akcbfyMdA
 });
 
 // This downloads and inserts the event program
-$.get("http://api.allorigins.win/get?url=https%3A//cloud-gul.uc3m.es/s/akcbfyMdAMmT3Gf/download%3Fpath%3D%252Feventos%26files%3Dprograma.txt", function (data) {
-    $("#programa").html(data.contents);
+$.get("https://cloud-gul.uc3m.es/s/akcbfyMdAMmT3Gf/download?path=%2Feventos&files=programa.txt", function (data) {
+    $("#programa").html(data);
 });
 
 /*$.ajax({
